@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+height: 100%;
+width:100%;
+}
+
+body{
+  background-image: url(./components/hero/coffee_cup_paper_755699_1366x768.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}

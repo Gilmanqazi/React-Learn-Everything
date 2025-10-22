@@ -1,31 +1,21 @@
 import React from 'react';
-import {Bookmark} from 'lucide-react'
 
-const Cards = (props) => {
+const Card = (props) => {
   return (
-    <div className="card">
-    <div className="top">
-      <img src={props.img} alt="" />
-      <button>Save<Bookmark size={15} /></button>
-    </div>
-    <div className="center">
-  <h3>{props.h3} <span>{props.span}</span></h3>
-  <h2>{props.h2}</h2>
+    // <div className='Parent'>
+<div className="card">
+  <img src= {props.img} alt="" />
   <div>
-    <h4>{props.h4}</h4>
-    <h4>{props.h4b}</h4>
+    <h1>{props.title} </h1>
+    <p>{props.description}<b></b></p>
   </div>
-    </div>
-  
-    <div className="bottom">
-  <div>
-      <h3>{props.btmh3}</h3>
-      <p>{props.btmp}</p>
-    </div>
-    <button>Apply Now</button>
+  <div className="button">
+    <button>{props.button}</button>
   </div>
-    </div>
+</div>
+
+    // </div>
   );
 };
 
-export default Cards;
+export default Card;

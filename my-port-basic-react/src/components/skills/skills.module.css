@@ -1,0 +1,14 @@
+.skills{
+  padding: 50px;
+background-color: #f4f4f4;
+  display: flex;
+  text-align: center;
+justify-content: space-around;
+}
+
+h2{
+  text-transform: uppercase;
+  background-color: rgb(248, 62, 124);
+  padding: 40px 30px;
+  border-radius: 50%;
+}

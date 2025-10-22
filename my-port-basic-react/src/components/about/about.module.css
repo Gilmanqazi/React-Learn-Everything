@@ -1,0 +1,14 @@
+.about{
+padding: 50px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+h1{
+  color: black;
+}
+
