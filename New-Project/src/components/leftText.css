@@ -1,0 +1,24 @@
+.leftText{
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.gilman{
+  margin-top: 10%;
+  padding: 1rem 4rem;
+  color: rgb(73, 44, 27);
+}
+.leftText p{
+  padding: 0.1rem 4rem;
+  width: 70%;
+  color: rgb(73, 44, 27);
+}
+.leftText h4{
+  margin: 1rem 4rem;
+  width: 20%;
+padding: 0.3rem 2rem;
+background-color: rgb(73, 44, 27);
+color: white;
+font-size: 0.9rem;
+}

@@ -1,0 +1,34 @@
+.navbar{
+  width: 100%;
+  padding: 1.5rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: blanchedalmond;
+  }
+
+  .navbar .center-nav{
+    display: flex;
+    gap: 2rem;
+    display: none;
+  }
+
+  .navbar .logo h1{
+    font-size: 1rem;
+  }
+  .navbar .right-nav h3{
+    font-size: 0.5rem;
+    border: none;
+    padding: 0.5rem 1.3rem;
+    background-color: azure;
+    border-radius: 2rem;
+  }
+
+  @media (min-width:750px) {
+    .navbar .center-nav{
+      display: flex;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+  }
+
