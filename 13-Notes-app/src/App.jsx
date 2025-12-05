@@ -1,4 +1,4 @@
-import { Copy } from 'lucide-react';
+
 import React, { useState } from 'react';
 
 const App = () => {
@@ -20,6 +20,12 @@ setTitle('')
 setDetails('')
 }
 
+function deleteNote(idx){
+const CopyTask = [...task];
+CopyTask.splice(idx,1)
+setTask(CopyTask)
+
+}
 
 
   return (
@@ -37,7 +43,7 @@ submitHandle(elem)
 
          placeholder='Enter Notes Heading' 
 
-         className='px-5 w-full py-2 font-medium border-2 rounded outline-none text-amber-50'
+         className='px-5 w-full py-2 font-medium text-xs border-2 rounded outline-none text-amber-50'
          value={title}
 
          onChange={function(e){
@@ -73,10 +79,15 @@ setTitle(e.target.value)
        <div className='flex gap-1.5 flex-wrap mt-1 h-full overflow-auto'>
 
 {task.map(function(elem,idx){
-  return  <div key={idx} className='relative h-52 w-42 rounded-2xl  py-6 px-6 bg-cover bg-center bg-[url("https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png")] text-black '>
-    <h1></h1>
-    <h3 className='leading-tight text-xl font-bold capitalize'>{elem.title}</h3>
-    <p className='text-gray-800 text-lg'>{elem.details}</p>
+  return  <div key={idx} className='flex justify-between flex-col items-start relative h-52 w-42 rounded-2xl  py-6 px-6 bg-cover bg-center bg-[url("https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png")] text-black '>
+  
+<div>
+<h3 className='leading-tight text-xl font-semibold capitalize'>{elem.title}</h3>
+<p className='text-gray-800 text-xs'>{elem.details}</p>
+</div>
+<button onClick={function(){
+  deleteNote(idx)
+}} className='w-full bg-red-500 cursor-pointer active:scale-95 text-white py-1 text-xs rounded font-bold'>Delete</button>
     </div>
 })}
        </div>
@@ -86,3 +97,4 @@ setTitle(e.target.value)
 };
 
 export default App;
+
